@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Projects - Chaitanya Pandey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Use the same stylesheet -->
+</head>
+
+<body data-bs-theme="light"> <!-- Same body tag for theme consistency -->
+
+    <!-- Navigation Bar (Same structure, "Projects" link will be active) -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Chaitanya Pandey</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="experience.html">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resume.pdf" target="_blank">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center mt-3 mt-lg-0 ms-lg-3">
+                        <i class="bi bi-sun-fill me-3 theme-icon-sun"></i>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="darkModeSwitch">
+                        </div>
+                        <i class="bi bi-moon-fill ms-3 theme-icon-moon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header Section -->
+    <header class="page-header-section py-5 text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold page-title">My Projects</h1>
+            <p class="lead page-subtitle">A collection of my work, showcasing my skills and passion for development.</p>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+
+            <!-- Project 1: Code Converter -->
+            <div class="col">
+                <div class="card h-100 project-card-full-page shadow-sm">
+                    <img src="https://via.placeholder.com/400x250.png?text=Code+Converter+Screenshot" class="card-img-top project-thumbnail" alt="Code Converter Project">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title project-title-main">Code Converter (Java ↔ Python)</h5>
+                        <p class="card-text small project-short-desc">Full-stack web app to convert code between Java and Python using AI, featuring Spring Boot backend and a Flask microservice for Gemini API calls.</p>
+                        <div class="mt-2 mb-3">
+                            <span class="badge tech-badge">Java</span>
+                            <span class="badge tech-badge">Spring Boot</span>
+                            <span class="badge tech-badge">Python</span>
+                            <span class="badge tech-badge">Flask</span>
+                            <span class="badge tech-badge">Next.js</span>
+                            <span class="badge tech-badge">Gemini API</span>
+                        </div>
+                        <div class="mt-auto d-flex justify-content-between align-items-center">
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModalCodeConverter">
+                                View Details
+                            </button>
+                            <a href="https://github.com/Chaitu1712/YOUR_CODE_CONVERTER_REPO" target="_blank" class="btn btn-icon" title="View Code on GitHub"><i class="bi bi-github fs-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2: Task Scheduler -->
+            <div class="col">
+                <div class="card h-100 project-card-full-page shadow-sm">
+                    <img src="https://via.placeholder.com/400x250.png?text=Task+Scheduler+Screenshot" class="card-img-top project-thumbnail" alt="Task Scheduler Project">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title project-title-main">Task Scheduler</h5>
+                        <p class="card-text small project-short-desc">Scheduling app using Java Spring Boot backend and React frontend. Supports priority-based task management and calendar integration.</p>
+                        <div class="mt-2 mb-3">
+                            <span class="badge tech-badge">Java</span>
+                            <span class="badge tech-badge">Spring Boot</span>
+                            <span class="badge tech-badge">React</span>
+                        </div>
+                        <div class="mt-auto d-flex justify-content-between align-items-center">
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModalTaskScheduler">
+                                View Details
+                            </button>
+                            <a href="https://github.com/Chaitu1712/YOUR_TASK_SCHEDULER_REPO" target="_blank" class="btn btn-icon" title="View Code on GitHub"><i class="bi bi-github fs-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3: Notes Application -->
+            <div class="col">
+                <div class="card h-100 project-card-full-page shadow-sm">
+                     <img src="https://via.placeholder.com/400x250.png?text=Notes+App+Screenshot" class="card-img-top project-thumbnail" alt="Notes Application Project">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title project-title-main">Notes Application</h5>
+                        <p class="card-text small project-short-desc">Desktop notes application created with JavaScript, PostgreSQL, and Electron. Features translucent sticky notes and persistent data storage.</p>
+                        <div class="mt-2 mb-3">
+                            <span class="badge tech-badge">JavaScript</span>
+                            <span class="badge tech-badge">PostgreSQL</span>
+                            <span class="badge tech-badge">Electron</span>
+                        </div>
+                         <div class="mt-auto d-flex justify-content-between align-items-center">
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModalNotesApp">
+                                View Details
+                            </button>
+                            <a href="https://github.com/Chaitu1712/YOUR_NOTES_APP_REPO" target="_blank" class="btn btn-icon" title="View Code on GitHub"><i class="bi bi-github fs-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 4: Pet E-Commerce Website -->
+            <div class="col">
+                <div class="card h-100 project-card-full-page shadow-sm">
+                    <img src="https://via.placeholder.com/400x250.png?text=Pet+Ecomm+Screenshot" class="card-img-top project-thumbnail" alt="Pet E-Commerce Website">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title project-title-main">Pet E-Commerce Website</h5>
+                        <p class="card-text small project-short-desc">Full-stack website built with HTML, CSS, JavaScript, and MongoDB. Includes shopping cart, filtering, and user login features.</p>
+                        <div class="mt-2 mb-3">
+                            <span class="badge tech-badge">HTML</span>
+                            <span class="badge tech-badge">CSS</span>
+                            <span class="badge tech-badge">JavaScript</span>
+                            <span class="badge tech-badge">MongoDB</span>
+                        </div>
+                        <div class="mt-auto d-flex justify-content-between align-items-center">
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModalPetEcomm">
+                                View Details
+                            </button>
+                            <a href="https://github.com/Chaitu1712/YOUR_PET_ECOMM_REPO" target="_blank" class="btn btn-icon" title="View Code on GitHub"><i class="bi bi-github fs-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 5: Sales System (Java Swing) -->
+            <div class="col">
+                <div class="card h-100 project-card-full-page shadow-sm">
+                    <img src="https://via.placeholder.com/400x250.png?text=Sales+System+Screenshot" class="card-img-top project-thumbnail" alt="Sales System Project">
+                    <div class="card-body d-flex flex-column">
+                        <h5 class="card-title project-title-main">Sales System (Java Swing)</h5>
+                        <p class="card-text small project-short-desc">Desktop POS system using Java Swing for small business needs. Handles transactions, receipts, and inventory management.</p>
+                        <div class="mt-2 mb-3">
+                            <span class="badge tech-badge">Java</span>
+                            <span class="badge tech-badge">Java Swing</span>
+                        </div>
+                        <div class="mt-auto d-flex justify-content-between align-items-center">
+                            <button type="button" class="btn btn-outline-primary btn-sm" data-bs-toggle="modal" data-bs-target="#projectModalSalesSystem">
+                                View Details
+                            </button>
+                            <a href="https://github.com/Chaitu1712/YOUR_SALES_SYSTEM_REPO" target="_blank" class="btn btn-icon" title="View Code on GitHub"><i class="bi bi-github fs-4"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div> <!-- End of .row -->
+    </main>
+
+    <!-- Modals Section (Place all modals here, typically before the footer or end of body) -->
+
+    <!-- Modal for Code Converter -->
+    <div class="modal fade" id="projectModalCodeConverter" tabindex="-1" aria-labelledby="projectModalCodeConverterLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalCodeConverterLabel">Code Converter (Java ↔ Python)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/700x400.png?text=Code+Converter+Detail" class="img-fluid rounded mb-3" alt="Code Converter Detail">
+                    <p>This full-stack web application leverages Artificial Intelligence to seamlessly convert code snippets between Java and Python. The architecture is designed for efficiency and scalability.</p>
+                    <h6>Key Features & Technologies:</h6>
+                    <ul>
+                        <li><strong>Backend:</strong> Built with Java Spring Boot, providing robust RESTful APIs.</li>
+                        <li><strong>AI Microservice:</strong> A Python Flask microservice handles interactions with Google's Gemini API for the core code conversion logic.</li>
+                        <li><strong>Frontend:</strong> Developed using Next.js, ensuring a responsive and modern user interface.</li>
+                        <li>Developed a full-stack web app to convert code between Java and Python using AI.</li>
+                        <li>Utilized Spring Boot for the main backend and a Flask microservice for Gemini API calls.</li>
+                        <li>Implemented a responsive UI with Next.js.</li>
+                    </ul>
+                    <h6>Challenges & Learnings:</h6>
+                    <p>Integrating the Flask microservice with the Spring Boot backend while ensuring smooth data flow was a key challenge. This project deepened my understanding of microservice architecture, API design, and working with external AI services.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/Chaitu1712/YOUR_CODE_CONVERTER_REPO" target="_blank" class="btn btn-primary"><i class="bi bi-github me-2"></i>View Code</a>
+                    <!-- <a href="#" target="_blank" class="btn btn-success"><i class="bi bi-display me-2"></i>Live Demo</a> -->
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Task Scheduler -->
+    <div class="modal fade" id="projectModalTaskScheduler" tabindex="-1" aria-labelledby="projectModalTaskSchedulerLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalTaskSchedulerLabel">Task Scheduler</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/700x400.png?text=Task+Scheduler+Detail" class="img-fluid rounded mb-3" alt="Task Scheduler Detail">
+                    <p>A comprehensive scheduling application designed to help users manage their tasks effectively. It combines a powerful Java Spring Boot backend with an interactive React frontend.</p>
+                    <h6>Key Features & Technologies:</h6>
+                    <ul>
+                        <li><strong>Backend:</strong> Java Spring Boot for API development and business logic.</li>
+                        <li><strong>Frontend:</strong> React for a dynamic and user-friendly interface.</li>
+                        <li>Supports priority-based task management, allowing users to organize tasks by importance.</li>
+                        <li>Features calendar integration for a visual overview of schedules.</li>
+                    </ul>
+                     <h6>Challenges & Learnings:</h6>
+                    <p>Implementing the priority-based sorting and ensuring seamless calendar synchronization were interesting challenges. This project enhanced my skills in full-stack development with the Spring Boot and React ecosystem.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/Chaitu1712/YOUR_TASK_SCHEDULER_REPO" target="_blank" class="btn btn-primary"><i class="bi bi-github me-2"></i>View Code</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Notes Application -->
+    <div class="modal fade" id="projectModalNotesApp" tabindex="-1" aria-labelledby="projectModalNotesAppLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalNotesAppLabel">Notes Application</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/700x400.png?text=Notes+App+Detail" class="img-fluid rounded mb-3" alt="Notes App Detail">
+                    <p>A desktop application for note-taking, built using JavaScript, PostgreSQL for data storage, and the Electron framework for cross-platform compatibility.</p>
+                    <h6>Key Features & Technologies:</h6>
+                    <ul>
+                        <li><strong>Core Technologies:</strong> JavaScript, PostgreSQL, Electron.</li>
+                        <li>Includes visually appealing translucent sticky notes.</li>
+                        <li>Ensures persistent data storage, so notes are saved across sessions.</li>
+                    </ul>
+                    <h6>Challenges & Learnings:</h6>
+                    <p>Managing local data persistence with PostgreSQL in an Electron app and creating the custom translucent UI were key learning experiences. This project provided valuable insights into desktop application development.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/Chaitu1712/YOUR_NOTES_APP_REPO" target="_blank" class="btn btn-primary"><i class="bi bi-github me-2"></i>View Code</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Pet E-Commerce Website -->
+    <div class="modal fade" id="projectModalPetEcomm" tabindex="-1" aria-labelledby="projectModalPetEcommLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalPetEcommLabel">Pet E-Commerce Website</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/700x400.png?text=Pet+Ecomm+Detail" class="img-fluid rounded mb-3" alt="Pet Ecomm Detail">
+                    <p>A fully functional e-commerce platform dedicated to pet products. This project showcases fundamental web development skills using HTML, CSS, JavaScript, and MongoDB.</p>
+                    <h6>Key Features & Technologies:</h6>
+                    <ul>
+                        <li><strong>Frontend:</strong> HTML, CSS, JavaScript for user interface and interactivity.</li>
+                        <li><strong>Backend/Database:</strong> MongoDB for flexible data storage.</li>
+                        <li>Includes a shopping cart functionality.</li>
+                        <li>Supports product filtering based on various criteria.</li>
+                        <li>Features user login and registration capabilities.</li>
+                    </ul>
+                    <h6>Challenges & Learnings:</h6>
+                    <p>Building the shopping cart logic and user authentication from scratch provided a solid understanding of client-side and server-side interactions in web applications.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/Chaitu1712/YOUR_PET_ECOMM_REPO" target="_blank" class="btn btn-primary"><i class="bi bi-github me-2"></i>View Code</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal for Sales System -->
+    <div class="modal fade" id="projectModalSalesSystem" tabindex="-1" aria-labelledby="projectModalSalesSystemLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="projectModalSalesSystemLabel">Sales System (Java Swing)</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="https://via.placeholder.com/700x400.png?text=Sales+System+Detail" class="img-fluid rounded mb-3" alt="Sales System Detail">
+                    <p>A desktop Point of Sale (POS) system developed using Java Swing, tailored for the needs of small businesses. It provides essential functionalities for daily sales operations.</p>
+                    <h6>Key Features & Technologies:</h6>
+                    <ul>
+                        <li><strong>Core Technology:</strong> Java Swing for the graphical user interface.</li>
+                        <li>Handles sales transactions efficiently.</li>
+                        <li>Generates receipts for customers.</li>
+                        <li>Includes basic inventory management features.</li>
+                    </ul>
+                     <h6>Challenges & Learnings:</h6>
+                    <p>Designing an intuitive GUI with Java Swing and managing application state for transactions and inventory were the main challenges. This project was a great exercise in traditional desktop application development and object-oriented design.</p>
+                </div>
+                <div class="modal-footer">
+                    <a href="https://github.com/Chaitu1712/YOUR_SALES_SYSTEM_REPO" target="_blank" class="btn btn-primary"><i class="bi bi-github me-2"></i>View Code</a>
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="py-4 footer-bg">
+        <div class="container text-center">
+            <p class="mb-2 footer-text">© <span id="currentYear"></span> Chaitanya Pandey. All Rights Reserved.</p>
+            <div>
+                <a href="https://www.linkedin.com/in/chaitanya-pandey-b97a08249" target="_blank"
+                    class="footer-link me-3 fs-4"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/Chaitu1712" target="_blank" class="footer-link fs-4"><i
+                        class="bi bi-github"></i></a>
+            </div>
+            <p class="small mt-2 footer-text">Email: <a href="mailto:chaitanyapandey62@gmail.com"
+                    class="footer-link">chaitanyapandey62@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script> <!-- Use the same script.js -->
+</body>
+</html>

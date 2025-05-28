@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me - Chaitanya Pandey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Use the same stylesheet -->
+</head>
+
+<body data-bs-theme="light"> <!-- Same body tag for theme consistency -->
+
+    <!-- Navigation Bar (Same structure, "Contact" link will be active) -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Chaitanya Pandey</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="experience.html">Experience</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resume.pdf" target="_blank">Resume</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="contact.html">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center mt-3 mt-lg-0 ms-lg-3">
+                        <i class="bi bi-sun-fill me-3 theme-icon-sun"></i>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="darkModeSwitch">
+                        </div>
+                        <i class="bi bi-moon-fill ms-3 theme-icon-moon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header Section -->
+    <header class="page-header-section py-5 text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold page-title">Get In Touch</h1>
+            <p class="lead page-subtitle">I'd love to hear from you! Whether you have a question or just want to say hi, feel free to reach out.</p>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <div class="row">
+            <!-- Contact Form Section -->
+            <div class="col-lg-7 mb-5 mb-lg-0">
+                <h2 class="section-subtitle mb-4">Send Me a Message</h2>
+                <form id="contactForm" action="https://formspree.io/f/xeogyqed" method="POST"> <!-- Replace YOUR_FORMSPREE_ID -->
+                    <div class="mb-3">
+                        <label for="contactName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control form-control-lg" id="contactName" name="Name" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="contactEmail" class="form-label">Email Address</label>
+                        <input type="email" class="form-control form-control-lg" id="contactEmail" name="Reply To" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="contactSubject" class="form-label">Subject</label>
+                        <input type="text" class="form-control form-control-lg" id="contactSubject" name="Subject">
+                    </div>
+                    <div class="mb-3">
+                        <label for="contactMessage" class="form-label">Message</label>
+                        <textarea class="form-control form-control-lg" id="contactMessage" name="Message" rows="6" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-accent btn-lg w-100">Send Message</button>
+                    <div id="formStatus" class="mt-3"></div> <!-- For success/error messages -->
+                </form>
+            </div>
+
+            <!-- Direct Contact Info Section -->
+            <div class="col-lg-4 offset-lg-1">
+                <h2 class="section-subtitle mb-4">Contact Information</h2>
+                <div class="contact-info-item d-flex align-items-start mb-4">
+                    <i class="bi bi-envelope-fill contact-icon me-3"></i>
+                    <div>
+                        <h5 class="contact-info-title">Email</h5>
+                        <p class="contact-info-text"><a href="mailto:chaitanyapandey62@gmail.com" class="contact-link">chaitanyapandey62@gmail.com</a></p>
+                    </div>
+                </div>
+                <div class="contact-info-item d-flex align-items-start mb-4">
+                    <i class="bi bi-linkedin contact-icon me-3"></i>
+                    <div>
+                        <h5 class="contact-info-title">LinkedIn</h5>
+                        <p class="contact-info-text"><a href="https://www.linkedin.com/in/chaitanya-pandey-b97a08249" target="_blank" class="contact-link">linkedin.com/in/chaitanya-pandey-b97a08249</a></p>
+                    </div>
+                </div>
+                <div class="contact-info-item d-flex align-items-start mb-4">
+                    <i class="bi bi-github contact-icon me-3"></i>
+                    <div>
+                        <h5 class="contact-info-title">GitHub</h5>
+                        <p class="contact-info-text"><a href="https://github.com/Chaitu1712" target="_blank" class="contact-link">github.com/Chaitu1712</a></p>
+                    </div>
+                </div>
+                 <div class="contact-info-item d-flex align-items-start">
+                    <i class="bi bi-geo-alt-fill contact-icon me-3"></i>
+                    <div>
+                        <h5 class="contact-info-title">Location</h5>
+                        <p class="contact-info-text">Vellore, Tamil Nadu, India</p>
+                        <p class="contact-info-text-small">(Open to remote opportunities and relocation)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="py-4 footer-bg">
+        <div class="container text-center">
+            <p class="mb-2 footer-text">© <span id="currentYear"></span> Chaitanya Pandey. All Rights Reserved.</p>
+            <div>
+                <a href="https://www.linkedin.com/in/chaitanya-pandey-b97a08249" target="_blank"
+                    class="footer-link me-3 fs-4"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/Chaitu1712" target="_blank" class="footer-link fs-4"><i
+                        class="bi bi-github"></i></a>
+            </div>
+            <p class="small mt-2 footer-text">Email: <a href="mailto:chaitanyapandey62@gmail.com"
+                    class="footer-link">chaitanyapandey62@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script> <!-- Use the same script.js -->
+</body>
+</html>

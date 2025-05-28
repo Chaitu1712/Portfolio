@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me - Chaitanya Pandey</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="styles.css"> <!-- Use the same stylesheet -->
+</head>
+
+<body data-bs-theme="light"> <!-- Same body tag for theme consistency -->
+
+    <!-- Navigation Bar (Same as index.html, but "About" link will be active) -->
+    <nav class="navbar navbar-expand-lg fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" target="_self">Chaitanya Pandey</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
+                aria-labelledby="offcanvasNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" target="_self">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a> <!-- Link to projects.html -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="experience.html">Experience</a> <!-- Link to experience.html -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="resume.pdf" target="_blank">Resume</a> <!-- Direct link to PDF -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact</a> <!-- Link to contact.html -->
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center mt-3 mt-lg-0 ms-lg-3">
+                        <i class="bi bi-sun-fill me-3 theme-icon-sun"></i>
+                        <div class="form-check form-switch">
+                            <input class="form-check-input" type="checkbox" role="switch" id="darkModeSwitch">
+                        </div>
+                        <i class="bi bi-moon-fill ms-3 theme-icon-moon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header Section -->
+    <header class="page-header-section py-5 text-center">
+        <div class="container">
+            <h1 class="display-4 fw-bold page-title">About Me</h1>
+            <p class="lead page-subtitle">Get to know the person behind the code.</p>
+        </div>
+    </header>
+
+    <main class="container py-5">
+        <!-- Introduction / My Story Section -->
+        <section id="my-story" class="mb-5">
+            <div class="row align-items-center">
+                <div class="col-lg-4 text-center mb-4 mb-lg-0">
+                    <!-- Placeholder for your photo. Replace with an actual image. -->
+                    <img src="https://via.placeholder.com/300x300.png?text=Chaitanya+Pandey" alt="Chaitanya Pandey"
+                        class="img-fluid rounded-circle shadow-sm profile-picture">
+                </div>
+                <div class="col-lg-8">
+                    <h2 class="mb-3 section-subtitle">Hello, I'm Chaitanya!</h2>
+                    <p class="fs-5">
+                        I'm a passionate computer science student deeply fascinated by the power of technology to solve real-world problems.
+                        My journey into the world of coding began with a curiosity to understand how complex systems work, and it has since
+                        evolved into a drive to build them.
+                    </p>
+                    <p>
+                        I thrive on diving into challenging projects, whether it's developing full-stack applications, designing efficient
+                        databases, or exploring the intricacies of algorithms. Collaborating with others is something I genuinely enjoy,
+                        as I believe the best solutions often come from diverse perspectives and teamwork.
+                    </p>
+                    <p>
+                        Learning new technologies and methodologies is a constant pursuit for me. I'm always eager to expand my skillset
+                        and apply fresh knowledge to create innovative and impactful solutions. I'm particularly excited about opportunities
+                        where I can contribute meaningfully to a team's success while continuing to grow both professionally and personally.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="py-5 section-bg rounded">
+            <div class="container">
+                <h2 class="text-center mb-5 section-title">My Education</h2>
+                <div class="row gy-4 justify-content-center">
+                    <div class="col-md-10 col-lg-8">
+                        <div class="education-item p-4 rounded shadow-sm card-bg">
+                            <h4 class="education-degree">Bachelor of Technology (B.Tech) in Computer Science & Engineering</h4>
+                            <p class="education-institution text-muted mb-1">Vellore Institute of Technology, Vellore</p>
+                            <p class="education-meta mb-1"><strong>Graduation:</strong> 2022 – 2026</p>
+                            <p class="education-meta"><strong>GPA:</strong> 8.22 / 10</p>
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-lg-8">
+                        <div class="education-item p-4 rounded shadow-sm card-bg">
+                            <h4 class="education-degree">Class XII (CBSE)</h4>
+                            <p class="education-institution text-muted mb-1">Brightlands School, Dehradun</p>
+                            <p class="education-meta mb-1"><strong>Completed:</strong> 2022</p>
+                            <p class="education-meta"><strong>Percentage:</strong> 94.5%</p>
+                        </div>
+                    </div>
+                    <div class="col-md-10 col-lg-8">
+                        <div class="education-item p-4 rounded shadow-sm card-bg">
+                            <h4 class="education-degree">Class X (CBSE)</h4>
+                            <p class="education-institution text-muted mb-1">Brightlands School, Dehradun</p>
+                            <p class="education-meta mb-1"><strong>Completed:</strong> 2020</p>
+                            <p class="education-meta"><strong>Percentage:</strong> 95.6%</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technical Skills Section -->
+        <section id="technical-skills" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-5 section-title">My Toolkit</h2>
+                <div class="row gy-4">
+                    <div class="col-lg-6">
+                        <h4 class="skill-category-title mb-3"><i class="bi bi-code-slash me-2"></i>Programming Languages</h4>
+                        <ul class="list-unstyled skill-list">
+                            <li><span class="skill-badge">Java</span></li>
+                            <li><span class="skill-badge">C++</span></li>
+                            <li><span class="skill-badge">Python</span></li>
+                            <li><span class="skill-badge">C</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4 class="skill-category-title mb-3"><i class="bi bi-globe2 me-2"></i>Web Technologies</h4>
+                        <ul class="list-unstyled skill-list">
+                            <li><span class="skill-badge">HTML</span></li>
+                            <li><span class="skill-badge">CSS</span></li>
+                            <li><span class="skill-badge">JavaScript</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4 class="skill-category-title mb-3"><i class="bi bi-box-seam me-2"></i>Frameworks & Libraries</h4>
+                        <ul class="list-unstyled skill-list">
+                            <li><span class="skill-badge">React</span></li>
+                            <li><span class="skill-badge">Spring Boot</span></li>
+                            <li><span class="skill-badge">Electron</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4 class="skill-category-title mb-3"><i class="bi bi-database-fill me-2"></i>Databases</h4>
+                        <ul class="list-unstyled skill-list">
+                            <li><span class="skill-badge">MySQL</span></li>
+                            <li><span class="skill-badge">MongoDB</span></li>
+                            <li><span class="skill-badge">Microsoft SQL Server</span></li>
+                            <li><span class="skill-badge">PostgreSQL</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4 class="skill-category-title mb-3"><i class="bi bi-tools me-2"></i>Tools & Platforms</h4>
+                        <ul class="list-unstyled skill-list">
+                            <li><span class="skill-badge">Git</span></li>
+                            <li><span class="skill-badge">VS Code</span></li>
+                            <li><span class="skill-badge">Postman</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6">
+                        <h4 class="skill-category-title mb-3"><i class="bi bi-laptop me-2"></i>Operating Systems</h4>
+                        <ul class="list-unstyled skill-list">
+                            <li><span class="skill-badge">Windows</span></li>
+                            <li><span class="skill-badge">Android</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Languages Known & Interests Section -->
+        <section id="languages-interests" class="py-5 section-bg rounded">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 mb-4 mb-md-0">
+                        <h2 class="text-center mb-4 section-title-sub">Languages I Speak</h2>
+                        <ul class="list-unstyled text-center fs-5">
+                            <li><i class="bi bi-translate me-2"></i>English</li>
+                            <li><i class="bi bi-translate me-2"></i>Hindi</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <h2 class="text-center mb-4 section-title-sub">Beyond the Code</h2>
+                        <ul class="list-unstyled text-center fs-5">
+                            <li><i class="bi bi-music-note-beamed me-2"></i>Playing the guitar</li>
+                            <li><i class="bi bi-person-rolodex me-2"></i>Tennis</li> <!-- Using a generic icon -->
+                            <li><i class="bi bi-bicycle me-2"></i>Cycling</li>
+                            <li><i class="bi bi-lightbulb me-2"></i>Exploring creative tech solutions</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer (Same as index.html) -->
+    <footer class="py-4 footer-bg">
+        <div class="container text-center">
+            <p class="mb-2 footer-text">© <span id="currentYear"></span> Chaitanya Pandey. All Rights Reserved.</p>
+            <div>
+                <a href="https://www.linkedin.com/in/chaitanya-pandey-b97a08249" target="_blank"
+                    class="footer-link me-3 fs-4"><i class="bi bi-linkedin"></i></a>
+                <a href="https://github.com/Chaitu1712" target="_blank" class="footer-link fs-4"><i
+                        class="bi bi-github"></i></a>
+            </div>
+            <p class="small mt-2 footer-text">Email: <a href="mailto:chaitanyapandey62@gmail.com"
+                    class="footer-link">chaitanyapandey62@gmail.com</a></p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script> <!-- Use the same script.js for theme toggling and year -->
+</body>
+</html>
