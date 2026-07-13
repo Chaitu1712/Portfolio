@@ -2,7 +2,17 @@
 import { motion } from "framer-motion";
 import { FaGithub, FaExternalLinkSquareAlt } from "react-icons/fa";
 
-export default function ProjectCard({ title, description, tech, githubLink, deploymentLink, getIcon }) {
+
+interface ProjectProps {
+  title: string;
+  description: string;
+  tech: string[];
+  githubLink: string;
+  deploymentLink?: string;
+  getIcon?: (tech: string) => React.ReactNode;
+}
+
+export default function ProjectCard({ title, description, tech, githubLink, deploymentLink, getIcon }: ProjectProps) {
   return (
     <motion.div 
       initial={{ opacity: 0, y: 20 }}

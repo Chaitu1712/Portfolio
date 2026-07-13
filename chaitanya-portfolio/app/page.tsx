@@ -9,7 +9,7 @@ import NetworkBackground from "@/components/NetworkBackground";
 
 export default function Home() {
 
-  const getIcon = (tech) => {
+  const getIcon = (tech:string) => {
     const iconProps = { size: 14, className: "inline" };
     switch (tech.toLowerCase()) {
       case "python": return <SiPython {...iconProps} />;
