@@ -6,7 +6,7 @@ export const metadata = {
   description: "Portfolio of Chaitanya Pandey - AI Systems, Backend Architecture, and Developer Tooling.",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" suppressHydrationWarning>
       <body suppressHydrationWarning>
